@@ -4,64 +4,191 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Carlos Botero</title>
   </head>
   <body>
     <header>
-      <h1>Carlos Eduardo Botero Viloria</h1>
-      <figure>
-        <img src="foto para linkdin.jpeg" width=800px" heigth="500px"/>
-      </figure>
+      <img src="foto para linkdin.jpeg" class="nav-image" alt="Carlo's photo" />
+      <nav>
+        <ul>
+          <li><a href="#Apresentação">Apresentação</a></li>
+          <li><a href="#Formação">Formação</a></li>
+          <li><a href="#Experiência">Experiência</a></li>
+          <li><a href="#Projeitos">Projeitos</a></li>
+          <li><a href="#Fale-comigo">Fale comigo!</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-      <p>
-        Sou venezuelano morando na cidade de Campinas, São Paulo. Tenho 25 anos,
-        gosto de me exercitar e aprender. Falo espanhol, inglês e estou
-        aprendendo português.
-      </p>
-      <h2>Redes sociais</h2>
-      <ul>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/carlos-eduardo-botero/"
-            target="_blank"
-            >Linkedin</a
-          >
-        </li>
-        <li>
-          <a href="https://github.com/CarlosEduardoBotero" target="_blank"
-            >Github</a
-          >
-        </li>
-      </ul>
-      <h2>Cancion favorita</h2>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/qCokifLMVVM"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </main>
-    <h2>Contate-me</h2>
-    <form>
-      <label for="Nome">Nome:</label><br />
-      <input type="text" placeholder="Nome" /><br />
-      <label for="Email:">Email:</label><br />
-      <input type="email" placeholder="Email" /><br />
-      <label for="Telefone">Telefone:</label><br />
-      <input type="tel" placeholder="Telefone" /><br />
-      <label for="Mensagem">Mensagem:</label><br />
-      <textarea
-        name="Mensagem"
-        rows="4"
-        cols="60"
-        placeholder="Mensagem"
-      ></textarea
-      ><br />
-      <button>Enviar mensagem</button>
-    </form>
+    <img src="Foto banner programming.jpg" class="banner" alt="Carlo's photo" />
+    <main id="Apresentação">
+      <div class="center-apresentação">
+          <div class="presentation-photo-container">
+            <div>
+              <img src="foto para linkdin.jpeg" class="presentation-photo" />
+            </div>
+            <div class="social-media-container">
+              <ul>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://cdn-icons-png.flaticon.com/512/5968/5968866.png"
+                      alt="Github icon"
+                    />Github</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png"
+                      alt="Linkedin icon"
+                    />Linkedin</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        <div class="presentation-text-container">
+          <h1>Carlos Eduardo Botero Viloria</h1>
+          <h2>Front-End Developer</h2>
+          <h3>Olá!</h3>
+          <p>
+            Sou venezuelano morando na cidade de Campinas, São Paulo.
+            Tenho 25 anos, gosto de me exercitar e aprender. Eu me especializei
+            em javascript e react. Falo espanhol, inglês e estou aprendendo
+            português. Nos meus tempos livres gosto de ir ao parque e passear.
+            Estou começando a praticar boxe.
+          </p>
+        </div>
+      </div>
+      </main>
+    <section id="Formação">
+      <div class="center">
+        <h1>Formação</h1>
+        <div class="studies-container">
+          <div class="studies-card-container">
+            <div class="studies-card-decoration"></div>
+            <div>
+              <p>2010-2015</p>
+              <h3>Ensino medio</h3>
+              <p>Colegio "Siete Estrellas" - Venezuela</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Experiência">
+      <div class="center">
+        <h1>Experiência</h1>
+        <div class="experience-container">
+          <div class="experience-card-container">
+            <div class="experience-card-decoration"></div>
+            <div>
+              <p>2022 - Atual</p>
+              <h3>Front-end developer</h3>
+              <p>DinamizeIT</p>
+            </div>
+          </div>
+          <div class="experience-card-container">
+            <div class="experience-card-decoration"></div>
+            <div>
+              <p>2021</p>
+              <h3>Front-end developer</h3>
+              <p>Hackademy</p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="Projeitos">
+    <div class="center">
+      <h1>Projeitos</h1>
+      <div class="projects-container">
+        <div class="projects-card">
+          <img src="foto-cv.png"></img>
+          <h1>Criar Curriculo</h1>
+          <p>É um aplicativo web onde você pode criar seu currículo de forma dinâmica,
+             e nossos recrutadores vão te ajudar a conseguir um emprego no mundo da tecnologia
+          </p>
+          <div class="projects-card-btn-container">
+            <button>Repositorio</button>
+           <button class="a-btn"> <a href="http://cvs-hackademy.herokuapp.com/" >Ver demo</a></button>
+          </div>
+        </div>
+        <div class="projects-card">
+          <img src="foto-cv.png"></img>
+          <h1>Test</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsam, voluptas rerum temporibus rem cum amet molestias sed enim quis.
+          </p>
+          <div class="projects-card-btn-container">
+            <button>Repositorio</button>
+           <button class="a-btn"> <a href="http://cvs-hackademy.herokuapp.com/" >Ver demo</a></button>
+          </div>
+        </div>
+        <div class="projects-card">
+          <img src="foto-cv.png"></img>
+          <h1>Test</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste magnam minima perspiciatis voluptas.
+          </p>
+          <div class="projects-card-btn-container">
+            <button>Repositorio</button>
+           <button class="a-btn"> <a href="http://cvs-hackademy.herokuapp.com/" >Ver demo</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+      </section>
+    <section id="Fale-comigo">
+      <div class="center">
+        <h2>Contate-me</h2>
+        <div class="contact-container">
+          <div class="contact-text-container">
+            <p>
+              Quer entrar em contato comigo? Preencha o formulário ao lado e entrarei
+              em contato o mais rápido possível. Você também pode me encontrar nas seguintes redes sociais:
+            </p>
+            <div class="contact-social-media-container">
+              <ul>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://cdn-icons-png.flaticon.com/512/5968/5968866.png"
+                      alt="Github icon"
+                    />Github</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png"
+                      alt="Linkedin icon"
+                    />Linkedin</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <form>
+            <label for="Nome">Nome:</label><br />
+            <input type="text" placeholder="Nome" /><br />
+            <label for="Email:">Email:</label><br />
+            <input type="email" placeholder="Email" /><br />
+            <label for="Telefone">Telefone:</label><br />
+            <input type="tel" placeholder="Telefone" /><br />
+            <label for="Mensagem">Mensagem:</label><br />
+            <textarea
+              name="Mensagem"
+              rows="4"
+              cols="60"
+              placeholder="Mensagem"
+            ></textarea
+            ><br />
+            <button>Enviar mensagem</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
